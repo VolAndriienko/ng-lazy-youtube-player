@@ -1,0 +1,45 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "ng-lazy-youtube-player",
+  "projects": {
+    "ng-lazy-youtube-player": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "ng-lazy-youtube-player",
+      "sourceRoot": "ng-lazy-youtube-player/src",
+      "prefix": "lyp",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "ng-lazy-youtube-player/tsconfig.lib.json",
+            "project": "ng-lazy-youtube-player/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "ng-lazy-youtube-player/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "ng-lazy-youtube-player/tsconfig.lib.json",
+              "ng-lazy-youtube-player/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-lazy-youtube-player"
+}

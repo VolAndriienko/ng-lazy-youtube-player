@@ -1,0 +1,27 @@
+{
+  "name": "ng-lazy-youtube-player",
+  "version": "0.0.1",
+  "author": "VolAndriienko",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VolAndriienko/ng-lazy-youtube-player.git"
+  },
+  "homepage": "https://github.com/VolAndriienko/ng-lazy-youtube-player#readme",
+  "peerDependencies": {
+    "@angular/animations": "^11.2.14",
+    "@angular/cdk": "^11.2.13",
+    "@angular/common": "^11.2.14",
+    "@angular/compiler": "^11.2.14",
+    "@angular/core": "^11.2.14",
+    "@angular/forms": "^11.2.14",
+    "@angular/platform-browser": "^11.2.14",
+    "@angular/platform-browser-dynamic": "^11.2.14",
+    "@angular/router": "^11.2.14",
+    "@angular/youtube-player": "^12.2.12",
+    "rxjs": "~6.6.7",
+    "zone.js": "^0.11.4"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  }
+}

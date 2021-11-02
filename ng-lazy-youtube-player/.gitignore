@@ -1,7 +1,5 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-**/*.iml
-
 # compiled output
 /dist
 /tmp
@@ -9,26 +7,8 @@
 # Only exists if Bazel was run
 /bazel-out
 
-/design-guide-app/dist
-/design-guide-app/target
-
-/node
-/library-test-app/node
-/library-test-app/target
-/table-backend/target
-/table-backend/.idea
-
-/design-guide-app/node
-/design-guide-app/node_modules
-
-/target
-
 # dependencies
 /node_modules
-/library-test-app/node_modules
-/library-test-app/dist
-
-/documentation.json
 
 # profiling files
 chrome-profiler-events*.json
@@ -66,6 +46,3 @@ testem.log
 Thumbs.db
 
 .node_modules
-.vs
-/storybook-static
-/ng-lazy-youtube-player/.npmrc

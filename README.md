@@ -1,53 +1,29 @@
-# Design system
+# Desigh system for Lazy Youtube Player
 
-Design system provides the possibility to develop and test rocketfuel-pattern-lib.
+This is the system for develop lazy youtube player component.
 
-Next tools is using here:  
-[Storybook](https://storybook.js.org/)  
-Is using for develop Angular library, create stories and test it.  
+It is using a [storybook](https://storybook.js.org/).
 
-[Compodoc](https://compodoc.app/)  
-With Compodoc will be created documetation files.  
+And includes a demo project.
 
-[Cypress](https://www.cypress.io/)  
-Cypress allows to create end-to-end test cases for library.
+The lib is pretty simple, so there are no tests used.
 
-[Eslint](https://eslint.org/)  
-Is using to verify code styles.
 
-## Available commands  
-To build documentation please use next command:
-```
-npm run docs:json
+## Commands
+In order to run stoybook, plase use:
 
-```
-
-To build storybook and documentation:
-```
-npm run build:storybook
-
-```
-
-To run storybook:
 ```
 npm run storybook
-
 ```
 
-To build rocketfuel-pattern-lib:
+To build lib:
 ```
 npm run build:lib
-
 ```
 
-To pack library after build please use:
-```
-npm run pack:lib
+Also, the system is using [npmrc-builder](https://www.npmjs.com/package/npmrc-builder)
 
+To generate .npmrc, please run
 ```
-
-To run cypress test cases:
-```
-npm run cypress:open
-
+npm run npmrc-builder
 ```

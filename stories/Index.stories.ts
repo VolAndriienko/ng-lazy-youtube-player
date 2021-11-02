@@ -28,5 +28,17 @@ const Template: Story<DemoComponent> = helper.createTemplate<DemoComponent>();
 
 export const Valid = Template.bind({});
 Valid.args = {
-  videoId: 'L-iepu3EtyE'
+  videoId: 'L-iepu3EtyE',
+  channelId: 'UCToBwovW495AiNI9oPUJD8w',
+  logoImageURL: `url('https://yt3.ggpht.com/ytc/AKedOLRiFUXWij1ofrdYuvmGGUpXC1O25vaeWIL0l4zBUg=s68-c-k-c0x00ffffff-no-rj')`,
+  videoName: 'Warehouse Star - Deine Lageroptimierung auf Knopfdruck',
+};
+
+export const Timeout = Template.bind({});
+Timeout.args = {
+  videoId: 'L-iepu3EtyE',
+  channelId: 'UCToBwovW495AiNI9oPUJD8w',
+  logoImageURL: `url('https://yt3.ggpht.com/ytc/AKedOLRiFUXWij1ofrdYuvmGGUpXC1O25vaeWIL0l4zBUg=s68-c-k-c0x00ffffff-no-rj')`,
+  videoName: 'Warehouse Star - Deine Lageroptimierung auf Knopfdruck',
+  loadTimeoutSeconds: 1
 };

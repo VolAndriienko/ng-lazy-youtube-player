@@ -45,3 +45,22 @@ export class AppComponent {
   videoId: string = 'L-iepu3EtyE';
 }
 ```
+
+## Options
+You can also specify next input options:
+```
+  // add logo icon to the top left corner
+  logoImageURL: `url('https://yt3.ggpht.com/ytc/AKedOLRiFUXWij1ofrdYuvmGGUpXC1O25vaeWIL0l4zBUg=s68-c-k-c0x00ffffff-no-rj')`,
+
+  // makes logo icon clickable and with target=_blank and opens the channel on click
+  channelId: 'UCToBwovW495AiNI9oPUJD8w', 
+
+  // add name next to logo, can be specified separately from the logo
+  videoName: 'Aerials',
+
+  // video will be loaded after specified seconds (autoplay still will not work, Youtube policy)
+  loadTimeoutSeconds: 1
+
+  // True is default, will not work if used loadTimeoutSeconds
+  autoplay: true
+```

@@ -14,6 +14,7 @@
              [attr.target]="channelId ? '_blank' : null"
              [attr.href]="channelId ? _channelURL : null"
              aria-label="Photo image of channel"
+             [attr.rel]="channelId ? 'noreferrer' : null"
              [style.cursor]="channelId ? 'pointer': 'default'"
              [style.background-image]="_logoImageURL">
           </a>
@@ -23,6 +24,7 @@
           <div class="title-text"
                [style.padding-left]="_logoImageURL ? '50px': '0px'">
             <a class="title-link yt-uix-sessionlink"
+               rel="noreferrer"
                target="_blank"
                tabindex="-1"
                href="{{_videoURL}}">
